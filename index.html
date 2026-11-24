@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Menú de la semana y pedidos del comedor universitario PUCEmedor">
+  <title>PUCEmedor | Menú de la semana</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <a class="saltar" href="#contenido">Saltar al contenido</a>
+  <header class="encabezado">
+    <h1>PUCEmedor</h1>
+    <p>Comedor Universitario · Comida casera a precio justo</p>
+    <nav aria-label="Navegación principal">
+      <ul>
+        <li><a href="index.html" aria-current="page">Menú</a></li>
+        <li><a href="pedidos.html">Pedir</a></li>
+        <li><a href="index.html#horarios">Horarios</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="contenido">
+    <section class="hero">
+      <h2>Almuerza rápido, sin filas</h2>
+      <p>Revisa el menú y haz tu pedido antes de salir de clase.</p>
+      <a class="boton" href="pedidos.html">Pedir mi almuerzo</a>
+    </section>
+
+    <section id="menu" class="menu-semanal">
+      <h2>Menú de la semana</h2>
+      <nav aria-label="Días de la semana" class="tabs">
+        <ul>
+          <li><a href="#lunes">Lun<span class="sr-only">es</span></a></li>
+          <li><a href="#martes">Mar<span class="sr-only">tes</span></a></li>
+          <li><a href="#miercoles">Mié<span class="sr-only">rcoles</span></a></li>
+          <li><a href="#jueves">Jue<span class="sr-only">ves</span></a></li>
+          <li><a href="#viernes">Vie<span class="sr-only">rnes</span></a></li>
+        </ul>
+      </nav>
+
+        <section id="lunes" class="dia">
+          <h3>Menú del lunes</h3>
+          <div class="tarjetas">
+            <article class="tarjeta">
+              <h4>Almuerzo ejecutivo</h4>
+              <p>Sopa de quinua, seco de pollo con arroz y ensalada, jugo natural.</p>
+              <p class="precio">$3.00</p>
+            </article>
+            <article class="tarjeta">
+              <h4>Almuerzo vegetariano</h4>
+              <p>Crema de zapallo, menestra de lentejas con arroz y plátano maduro.</p>
+              <p class="precio">$2.75</p>
+            </article>
+            <article class="tarjeta">
+              <h4>Plato fuerte</h4>
+              <p>Churrasco con huevo, arroz, papas fritas y ensalada.</p>
+              <p class="precio">$3.50</p>
+            </article>
+          </div>
+        </section>
+
+        <section id="martes" class="dia">
+          <h3>Menú del martes</h3>
+          <div class="tarjetas">
+            <article class="tarjeta">
+              <h4>Almuerzo ejecutivo</h4>
+              <p>Caldo de bolas de verde, estofado de carne con arroz y ensalada, jugo de mora.</p>
+              <p class="precio">$3.00</p>
+            </article>
+            <article class="tarjeta">
+              <h4>Almuerzo vegetariano</h4>
+              <p>Sopa de verduras, tortilla de acelga con arroz y ensalada fresca.</p>
+              <p class="precio">$2.75</p>
+            </article>
+            <article class="tarjeta">
+              <h4>Plato fuerte</h4>
+              <p>Pollo a la plancha con puré de papas y vegetales salteados.</p>
+              <p class="precio">$3.50</p>
+            </article>
+          </div>
+        </section>
+
+        <section id="miercoles" class="dia">
+          <h3>Menú del miércoles</h3>
+          <div class="tarjetas">
+            <article class="tarjeta">
+              <h4>Almuerzo ejecutivo</h4>
+              <p>Locro de papa, pescado frito con arroz y patacones, jugo de naranjilla.</p>
+              <p class="precio">$3.00</p>
+            </article>
+            <article class="tarjeta">
+              <h4>Almuerzo vegetariano</h4>
+              <p>Crema de brócoli, arroz con menestra de frejol y aguacate.</p>
+              <p class="precio">$2.75</p>
+            </article>
+            <article class="tarjeta">
+              <h4>Plato fuerte</h4>
+              <p>Lomo saltado con arroz y papas fritas.</p>
+              <p class="precio">$3.50</p>
+            </article>
+          </div>
+        </section>
+
+        <section id="jueves" class="dia">
+          <h3>Menú del jueves</h3>
+          <div class="tarjetas">
+            <article class="tarjeta">
+              <h4>Almuerzo ejecutivo</h4>
+              <p>Sopa de fideo, guatita con arroz y ensalada, jugo de tomate de árbol.</p>
+              <p class="precio">$3.00</p>
+            </article>
+            <article class="tarjeta">
+              <h4>Almuerzo vegetariano</h4>
+              <p>Sopa de zambo, tallarín con salsa de champiñones y ensalada.</p>
+              <p class="precio">$2.75</p>
+            </article>
+            <article class="tarjeta">
+              <h4>Plato fuerte</h4>
+              <p>Milanesa de pollo con arroz y ensalada.</p>
+              <p class="precio">$3.50</p>
+            </article>
+          </div>
+        </section>
+
+        <section id="viernes" class="dia">
+          <h3>Menú del viernes</h3>
+          <div class="tarjetas">
+            <article class="tarjeta">
+              <h4>Almuerzo ejecutivo</h4>
+              <p>Yaguarlocro, fritada con mote, tostado y curtido, jugo de frutilla.</p>
+              <p class="precio">$3.00</p>
+            </article>
+            <article class="tarjeta">
+              <h4>Almuerzo vegetariano</h4>
+              <p>Crema de espinaca, arroz con verduras al wok y plátano frito.</p>
+              <p class="precio">$2.75</p>
+            </article>
+            <article class="tarjeta">
+              <h4>Plato fuerte</h4>
+              <p>Hamburguesa casera con papas fritas.</p>
+              <p class="precio">$3.50</p>
+            </article>
+          </div>
+        </section>
+
+      <section class="desayuno">
+        <h3>Desayuno estudiantil (todos los días)</h3>
+        <p>Café o chocolate, pan, huevos revueltos y fruta. <strong>$1.75</strong></p>
+      </section>
+    </section>
+
+    <section id="horarios">
+      <h2>Horarios de atención</h2>
+      <ul class="horarios">
+        <li><strong>Lunes a viernes</strong></li>
+        <li><strong>Desayunos:</strong> 07:00 – 10:00</li>
+        <li><strong>Almuerzos:</strong> 12:00 – 15:00</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="pie">
+    <p>&copy; 2026 PUCEmedor · Comedor Universitario</p>
+    <p>Proyecto académico – Grupo 3</p>
+  </footer>
+</body>
+</html>

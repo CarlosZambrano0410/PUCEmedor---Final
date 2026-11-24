@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Formulario de pedidos del comedor universitario PUCEmedor">
+  <title>PUCEmedor | Pedir</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <a class="saltar" href="#contenido">Saltar al contenido</a>
+  <header class="encabezado">
+    <h1>PUCEmedor</h1>
+    <p>Comedor Universitario · Comida casera a precio justo</p>
+    <nav aria-label="Navegación principal">
+      <ul>
+        <li><a href="index.html">Menú</a></li>
+        <li><a href="pedidos.html" aria-current="page">Pedir</a></li>
+        <li><a href="index.html#horarios">Horarios</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="contenido">
+    <section>
+      <h2>Haz tu pedido</h2>
+      <p class="nota">Los pedidos son para el mismo día. Completa los campos marcados como obligatorios.</p>
+      <!--
+        IMPORTANTE: el sitio es estático (GitHub Pages) y no guarda pedidos por sí solo.
+        Para recibirlos, cambia action por la dirección de un servicio de formularios
+        (por ejemplo Formspree) y agrega un campo oculto que redirija a gracias.html.
+        Con action="gracias.html" solo se muestra la página de confirmación.
+      -->
+      <form action="gracias.html" method="get" class="formulario">
+        <fieldset>
+          <legend>Datos del pedido</legend>
+
+          <label for="nombre">Nombre de quien retira <span class="req">(obligatorio)</span></label>
+          <input type="text" id="nombre" name="nombre" placeholder="Ej: María Pérez" autocomplete="name" required>
+
+          <label for="plato">Plato <span class="req">(obligatorio)</span></label>
+          <select id="plato" name="plato" required>
+            <option value="">Selecciona una opción</option>
+            <option value="ejecutivo">Almuerzo ejecutivo – $3.00</option>
+            <option value="vegetariano">Almuerzo vegetariano – $2.75</option>
+            <option value="fuerte">Plato fuerte – $3.50</option>
+            <option value="desayuno">Desayuno estudiantil – $1.75</option>
+          </select>
+
+          <label for="cantidad">Cantidad</label>
+          <input type="number" id="cantidad" name="cantidad" min="1" max="5" value="1" inputmode="numeric">
+
+          <label for="hora">Hora de retiro <span class="req">(obligatorio)</span></label>
+          <input type="time" id="hora" name="hora" step="900" aria-describedby="hora-ayuda" required>
+          <p class="ayuda" id="hora-ayuda">Atendemos de 07:00 a 10:00 y de 12:00 a 15:00.</p>
+        </fieldset>
+
+        <details class="opcional">
+          <summary>Agregar observaciones (opcional)</summary>
+          <label for="notas">Observaciones</label>
+          <textarea id="notas" name="notas" rows="3" placeholder="Ej: sin cebolla"></textarea>
+        </details>
+
+        <button type="submit" class="boton">Enviar pedido</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="pie">
+    <p>&copy; 2026 PUCEmedor · Comedor Universitario</p>
+    <p>Proyecto académico – Grupo 3</p>
+  </footer>
+</body>
+</html>
